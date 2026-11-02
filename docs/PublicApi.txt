@@ -1,0 +1,34 @@
+BenScr.Scheduling.AmbiguousTimePolicy : System.Enum
+  Field BenScr.Scheduling.AmbiguousTimePolicy Both
+  Field BenScr.Scheduling.AmbiguousTimePolicy Earlier
+  Field BenScr.Scheduling.AmbiguousTimePolicy Later
+  Field BenScr.Scheduling.AmbiguousTimePolicy Skip
+  Field Int32 value__
+BenScr.Scheduling.CalendarSchedule : System.Object
+  Constructor Void .ctor(System.TimeOnly, System.TimeZoneInfo, BenScr.Scheduling.Weekdays, BenScr.Scheduling.AmbiguousTimePolicy)
+  Method BenScr.Scheduling.AmbiguousTimePolicy get_AmbiguousTimePolicy()
+  Method BenScr.Scheduling.Weekdays get_Days()
+  Method System.Nullable`1[System.DateTimeOffset] Next(System.DateTimeOffset, System.DateOnly, Boolean)
+  Method System.TimeOnly get_Time()
+  Method System.TimeZoneInfo get_TimeZone()
+  Property BenScr.Scheduling.AmbiguousTimePolicy AmbiguousTimePolicy
+  Property BenScr.Scheduling.Weekdays Days
+  Property System.TimeOnly Time
+  Property System.TimeZoneInfo TimeZone
+BenScr.Scheduling.IntervalSchedule : System.Object
+  Constructor Void .ctor(System.DateTimeOffset, System.TimeSpan)
+  Method System.DateTimeOffset get_Anchor()
+  Method System.Nullable`1[System.DateTimeOffset] Next(System.DateTimeOffset, Boolean)
+  Method System.TimeSpan get_Interval()
+  Property System.DateTimeOffset Anchor
+  Property System.TimeSpan Interval
+BenScr.Scheduling.Weekdays : System.Enum
+  Field BenScr.Scheduling.Weekdays EveryDay
+  Field BenScr.Scheduling.Weekdays Friday
+  Field BenScr.Scheduling.Weekdays Monday
+  Field BenScr.Scheduling.Weekdays Saturday
+  Field BenScr.Scheduling.Weekdays Sunday
+  Field BenScr.Scheduling.Weekdays Thursday
+  Field BenScr.Scheduling.Weekdays Tuesday
+  Field BenScr.Scheduling.Weekdays Wednesday
+  Field Int32 value__
